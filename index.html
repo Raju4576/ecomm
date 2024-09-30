@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <input type="text" id="userstr">
+    <button type="button" onclick="add()">Add String</button>
+
+    <script>
+
+
+    // for randome string generate 
+
+    function random(length) {
+    let result = '';
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        const charactersLength = characters.length;
+        let cnt = 0;
+        while (cnt < length) {
+          result += characters.charAt(Math.floor(Math.random() * charactersLength));
+          cnt ++;
+        }
+        return result;
+    }
+
+    console.log(random(16));
+
+function add(){
+    
+
+    
+    // user add string 
+
+    //var userstr = document.getElementById("userstr").value.split('');
+    var userstr = document.getElementById("userstr").value;
+    console.log(userstr);    
+    
+    // for merge string
+    
+    var mergestr = console.log(userstr.concat(result));
+    console.log(mergestr)
+
+    }
+
+    </script>
+
+
+</body>
+</html>
